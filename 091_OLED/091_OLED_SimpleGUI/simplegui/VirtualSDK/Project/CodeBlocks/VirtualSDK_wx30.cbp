@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimpleGUI VirtualSDK" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw-w64" />
+		<Build>
+			<Target title="x86">
+				<Option output="../../../Build/x86/bin/SimpleGUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../Build" />
+				<Option object_output="../../../Build/x86/obj" />
+				<Option type="0" />
+				<Option compiler="mingw-w64" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="$(#wx)/lib/gcc_x86_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_x86_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw30u_core.a" />
+					<Add library="libwxbase30u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libiconv.a" />
+					<Add directory="../../Library/lib32" />
+					<Add directory="$(#wx)/lib/gcc_x86_dll" />
+				</Linker>
+			</Target>
+			<Target title="x64">
+				<Option output="../../../Build/x64/bin/SimpleGUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../Build" />
+				<Option object_output="../../../Build/x64/obj" />
+				<Option type="0" />
+				<Option compiler="mingw-w64" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="$(#wx)/lib/gcc_x64_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_x64_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw30u_core.a" />
+					<Add library="libwxbase30u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libiconv64.a" />
+					<Add directory="../../Library/lib64" />
+					<Add directory="$(#wx)/lib/gcc_x64_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-g" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-Wno-deprecated-declarations" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-D_SIMPLE_GUI_DEMO_INNER_CHS_" />
+			<Add directory="$(#wx)/include" />
+			<Add directory="../../Application/inc" />
+			<Add directory="../../Common/inc" />
+			<Add directory="../../Library/inc" />
+			<Add directory="../../Frame/inc" />
+			<Add directory="../../Interface/inc" />
+			<Add directory="../../Controls/inc" />
+			<Add directory="../../Threads/inc" />
+			<Add directory="../../Demo/inc" />
+			<Add directory="../../Events/inc" />
+			<Add directory="../../../GUI/inc" />
+			<Add directory="../../../HMI/inc" />
+			<Add directory="../../../DemoProc/inc" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-O3" />
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="../../../DemoProc/inc/DemoActions.h" />
+		<Unit filename="../../../DemoProc/inc/DemoProc.h" />
+		<Unit filename="../../../DemoProc/inc/DemoResource_ASCII.h" />
+		<Unit filename="../../../DemoProc/inc/DemoResource_GB2312.h" />
+		<Unit filename="../../../DemoProc/inc/DemoResource_UTF8.h" />
+		<Unit filename="../../../DemoProc/inc/Resource.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Basic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Curve.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/DemoProc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Notice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/PolarCoordinates.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/RealtimeGraph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Resource.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/Text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../DemoProc/src/VariableBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/inc/SGUI_Basic.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Common.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Config.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Curve.h" />
+		<Unit filename="../../../GUI/inc/SGUI_FontResource.h" />
+		<Unit filename="../../../GUI/inc/SGUI_IconResource.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Interface.h" />
+		<Unit filename="../../../GUI/inc/SGUI_ItemsBase.h" />
+		<Unit filename="../../../GUI/inc/SGUI_List.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Menu.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Notice.h" />
+		<Unit filename="../../../GUI/inc/SGUI_PolarCoordinates.h" />
+		<Unit filename="../../../GUI/inc/SGUI_ProcessBar.h" />
+		<Unit filename="../../../GUI/inc/SGUI_RealtimeGraph.h" />
+		<Unit filename="../../../GUI/inc/SGUI_ScrollBar.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Text.h" />
+		<Unit filename="../../../GUI/inc/SGUI_Typedef.h" />
+		<Unit filename="../../../GUI/inc/SGUI_VariableBox.h" />
+		<Unit filename="../../../GUI/src/SGUI_Basic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Curve.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_FontResource.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_IconResource.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_ItemsBase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Notice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_PolarCoordinates.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_ProcessBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_RealtimeGraph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_ScrollBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_Text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../GUI/src/SGUI_VariableBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../HMI/inc/HMI_Engine.h" />
+		<Unit filename="../../../HMI/src/HMI_Engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Application/inc/Application.h" />
+		<Unit filename="../../Application/src/Application.cpp" />
+		<Unit filename="../../Common/inc/Common.h" />
+		<Unit filename="../../Common/src/Common.cpp" />
+		<Unit filename="../../Controls/inc/wxLCD.h" />
+		<Unit filename="../../Controls/inc/wxLCDBase.h" />
+		<Unit filename="../../Controls/src/wxLCD.cpp" />
+		<Unit filename="../../Controls/src/wxLCDBase.cpp" />
+		<Unit filename="../../Events/inc/CustomEvents.h" />
+		<Unit filename="../../Events/src/CustomEvents.cpp" />
+		<Unit filename="../../Frame/inc/LCDFrame.h" />
+		<Unit filename="../../Frame/src/LCDFrame.cpp" />
+		<Unit filename="../../Interface/inc/SDKInterface.h" />
+		<Unit filename="../../Interface/src/SDKInterface.cpp" />
+		<Unit filename="../../Library/inc/iconv.h" />
+		<Unit filename="../../Resource/Resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
