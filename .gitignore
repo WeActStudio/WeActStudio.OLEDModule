@@ -1,58 +1,51 @@
-# Prerequisites
-*.d
-
-.vscode
-
-.mxproject
-
-*.scvd
-*.lst
-*.dep
-*.iex
-*.crf
-*.lnp
-*.htm
-*.uvguix.*
-UNSupport/
-DebugConfig/
-RTE/
-
-# Object files
+*.psd
 *.o
-*.ko
-*.obj
-*.elf
+.DS_Store
+*~
+.~lock*
+*.uvopt
+*.dep
+*.bak
+*.uvgui.*
+*.uvguix.*
 
-# Linker output
-*.ilk
-*.map
-*.exp
+UNSupport/
 
-# Precompiled Headers
-*.gch
-*.pch
+*.swp
+*.save
+.project
+.settings
+.cproject
+obj/
+patches/
+.idea
+*.crf
+*.d
+*.lnp
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# artefacts of top-level Makefile
+/downloads/
+*/build/
+# local changes only
+make/local.mk
 
-# Executables
-*.out
-*.app
+# artefacts for VisualGDB (running in Visual Studio)
+mcu.mak
+mcu.mak.old
+stm32.mak
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# eclipse launch configurations
+/support/eclipse
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# ozone launch configurations
+/support/ozone
+
+# artefacts for Visual Studio Code
+/.vscode/
+
+# artefacts for CLion
+/cmake-build-debug/
+
+.vagrant
+ubuntu*.log
+/.vs
